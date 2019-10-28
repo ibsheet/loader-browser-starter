@@ -5,7 +5,7 @@
 ## clone project
 
 ```bash
-git clone https://github.com/ibsheet/loader-ng-starter ibl-browser-starter
+git clone https://github.com/ibsheet/loader-browser-starter ibl-browser-starter
 cd ibl-browser-starter
 ```
 
