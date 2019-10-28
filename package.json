@@ -1,0 +1,7 @@
+{
+  "standard": {
+    "ignore": [
+      "**/assets/ibsheet/"
+    ]
+  }
+}

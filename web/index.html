@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IBSheetLoader Browser Starter</title>
+</head>
+<body>
+  <p>
+    @ibsheet/loader v<span id="ibsheetLoaderVer"></span>  
+  </p>
+  <div id="sheetContainer">
+    <!-- main -->
+  </div>
+  <script src="//unpkg.com/@ibsheet/loader/dist/umd/ibsheet-loader.min.js"></script>
+  <script type="text/javascript">
+  (function(){
+    var MAIN_SCRIPT = 'scripts/main.js'
+    var nRandom = Math.random();
+    var e = document.getElementsByTagName('script')[0];
+    var d = document.createElement('script');
+    d.src = MAIN_SCRIPT + '?x=' + nRandom;
+    d.type = 'text/javascript';
+    d.async = true;
+    d.defer = true;
+    e.parentNode.insertBefore(d,e);
+  })();
+  </script>
+</body>
+</html>
