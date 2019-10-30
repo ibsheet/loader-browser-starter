@@ -2,21 +2,42 @@
 
 [`@ibsheet/loader`](https://github.com/ibsheet/loader) starter for browser
 
-## clone project
+## Clone Project
 
 ```bash
 git clone https://github.com/ibsheet/loader-browser-starter ibl-browser-starter
 cd ibl-browser-starter
 ```
 
-## setup and start
+## Copy IBSheet Library
 
-### install docker
+copy to: `web/vendors/ibsheet`
 
-* <https://runnable.com/docker/getting-started/>
+## Start
 
-### start
+### Using node with http-server
 
+Guide: <https://github.com/http-party/http-server>
+
+```bash
+http-server ./web
 ```
-docker-compose up -d
+
+### Using docker with nginx
+
+Guide: <https://hub.docker.com/_/nginx>
+
+* webroot: `./web`
+* port: `8080`
+
+#### docker run
+
+```bash
+docker run -p 8080:80 -v $(pwd)/web:/usr/share/nginx/html nginx
+```
+
+#### docker-compose
+
+```bash
+docker-compose up
 ```

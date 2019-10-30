@@ -11,11 +11,9 @@ verEl.innerHTML = loaderVersion
 loader.config({ debug: true })
 
 // load ibsheet
-var IBSHEET_BASEURL = '//dev.ibleaders.com/lib/ibsheet-js'
 loader.load({
   name: 'ibsheet',
-  // baseUrl: './vendors/ibsheet'
-  baseUrl: `${IBSHEET_BASEURL}/v8/core/nightly/latest`,
+  baseUrl: './vendors/ibsheet'
 })
 
 // define sheet options
